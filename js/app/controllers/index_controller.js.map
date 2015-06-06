@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "index_controller.js",
+  "sourceRoot": "",
+  "sources": [
+    "index_controller.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,MAAM,CAAC,eAAP,GAAyB,KAAK,CAAC,eAAe,CAAC,MAAtB,CACvB;AAAA,IAAA,OAAA,EAAQ,EAAR;GADuB,CAAzB,CAAA;AAAA"
+}

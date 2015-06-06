@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "index_route.js",
+  "sourceRoot": "",
+  "sources": [
+    "index_route.coffee"
+  ],
+  "names": [],
+  "mappings": ";AACA;AAAA,EAAA,MAAM,CAAC,UAAP,GAAoB,KAAK,CAAC,KAAK,CAAC,MAAZ,CAClB;AAAA,IAAA,KAAA,EAAM,SAAA,GAAA;aACJ,IAAC,CAAA,KAAK,CAAC,IAAP,CAAY,MAAZ,EADI;IAAA,CAAN;GADkB,CAApB,CAAA;AAAA"
+}
