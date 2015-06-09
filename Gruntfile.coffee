@@ -1,6 +1,16 @@
 module.exports = (grunt)->
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    coffee: {
+      glob_to_multiple: {
+        expand: true,
+        flatten: true,
+        cwd: 'js/app/',
+        src: ['**/*.coffee','*.coffee'],
+        dest: 'dist/',
+        ext: '.js'
+      }
+    },
     concat: {
       options: {
 
@@ -16,7 +26,7 @@ module.exports = (grunt)->
       },
 
       app: {
-        src: ['js/**/*.js'],
+        src: ['dist/*.js'],
         dest: 'dist/js/app.js'
       },
 
@@ -68,9 +78,10 @@ module.exports = (grunt)->
 
   })
 
+  grunt.loadNpmTasks('grunt-contrib-coffee')
   grunt.loadNpmTasks('grunt-contrib-cssmin')
   grunt.loadNpmTasks('grunt-contrib-concat')
   grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-copy')
 
-  grunt.registerTask('default', ['concat','uglify','cssmin','copy'])
+  grunt.registerTask('default', ['coffee','concat','uglify','cssmin','copy'])

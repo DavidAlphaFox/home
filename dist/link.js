@@ -1,33 +1,4 @@
 (function() {
-  window.MBooks = Ember.Application.create();
-
-  MBooks.ApplicationAdapter = DS.FixtureAdapter.extend();
-
-  MBooks.Router.map(function() {
-    return this.resource('index', {
-      path: '/'
-    });
-  });
-
-}).call(this);
-
-(function() {
-  MBooks.TodosController = Ember.ArrayController.extend({
-    actions: {}
-  });
-
-}).call(this);
-
-(function() {
-  MBooks.IndexRoute = Ember.Route.extend({
-    model: function() {
-      return this.store.find('link');
-    }
-  });
-
-}).call(this);
-
-(function() {
   MBooks.Link = DS.Model.extend({
     title: DS.attr('string'),
     url: DS.attr('string')
