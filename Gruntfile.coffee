@@ -16,13 +16,11 @@ module.exports = (grunt)->
 
       },
       basic: {
-        src: ['bower_components/jquery/dist/jquery.js',
-              'bower_components/handlebars/handlebars.js',
-              'bower_components/ember/ember-template-compiler.js',
+        src: ['bower_components/ember/ember-template-compiler.js',
               'bower_components/ember/ember.js',
               'bower_components/ember-data/ember-data.js'
         ],
-        dest: 'dist/js/base.js'
+        dest: 'dist/js/ember.js'
       },
 
       app: {
@@ -45,7 +43,7 @@ module.exports = (grunt)->
       bulid: {
         files:{
           'dist/js/app.min.js': ['dist/js/app.js'],
-          'dist/js/base.min.js': ['dist/js/base.js']
+          'dist/js/ember.min.js': ['dist/js/ember.js']
         }
       }
     },
@@ -59,6 +57,15 @@ module.exports = (grunt)->
     copy: {
       main: {
         files: [
+          {
+            expand: true,
+            flatten: true,
+            src: ['bower_components/jquery/dist/jquery.min.js',
+                  'bower_components/handlebars/handlebars.min.js'
+            ],
+            dest: 'dist/js',
+            filter: 'isFile'
+          }
           {
             expand: true,
             src: ['images/*'],
