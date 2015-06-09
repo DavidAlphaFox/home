@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "version": "0.0.1",
+  "homepage": "https://github.com/DavidAlphaFox/home",
+  "authors": [
+    "David.Gao <david.alpha.fox@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "ember": "~1.12.1",
+    "ember-data": "~1.0.0"
+  }
+}
