@@ -19,5 +19,10 @@ MBooks.Link.FIXTURES = [
     id: 3,
     title: '我司京东众筹－4G流量包一辈子',
     url: 'http://z.jd.com/project_details.action?projectId=14307'
+  },
+  {
+    id:4,
+    title: '关于我',
+    url: 'http://cn.linkedin.com/in/gaotianpo'
   }
 ]
