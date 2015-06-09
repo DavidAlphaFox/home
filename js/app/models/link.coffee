@@ -14,5 +14,10 @@ MBooks.Link.FIXTURES = [
     id: 2,
     title: '我的博客',
     url: 'http://my.oschina.net/u/236698'
+  },
+  {
+    void: 3,
+    title: '我司京东众筹－4G流量包一辈子',
+    url: 'http://z.jd.com/project_details.action?projectId=14307'
   }
 ]
