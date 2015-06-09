@@ -17,8 +17,7 @@ module.exports = (grunt)->
       },
       basic: {
         src: ['bower_components/ember/ember-template-compiler.js',
-              'bower_components/ember/ember.js',
-              'bower_components/ember-data/ember-data.js'
+              'bower_components/ember/ember.js'
         ],
         dest: 'dist/js/ember.js'
       },
@@ -61,7 +60,8 @@ module.exports = (grunt)->
             expand: true,
             flatten: true,
             src: ['bower_components/jquery/dist/jquery.min.js',
-                  'bower_components/handlebars/handlebars.min.js'
+                  'bower_components/handlebars/handlebars.min.js',
+                  'bower_components/ember-data/ember-data.min.js'
             ],
             dest: 'dist/js',
             filter: 'isFile'
