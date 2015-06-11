@@ -2,34 +2,36 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>道法自然</title>
     <link rel="stylesheet" href="dist/css/app.min.css">
 </head>
 <body>
-<script type="text/x-handlebars" data-template-name="index">
-<section id="mbooks" >
-    <section id="main">
-        <ul id="link-list">
-            {{#each l in model}}
-            <li >
-                <a {{bind-attr href="l.url"}}>{{l.title}}</a>
-            </li>
-            {{/each}}
-        </ul>
-    </section>
-</section>
+<script type="text/x-handlebars" data-template-name="mbooks_container">
+    <div class="container-fluid">
+        {{yield}}
+    </div>
+    <footer class="modal-footer">
+            <p class="text-center">本站使用了Ember.js和CoffeeScript</p>
+    </footer>
+</script>
 
-<footer id="info">
-    <p>本站使用了Ember.js和CoffeeScript</p>
-</footer>
-    </script>
-<!--
-<script src="http://www.cdnjs.net/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://www.cdnjs.net/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
-<script src="http://www.cdnjs.net/ajax/libs/ember.js/1.12.0/ember-template-compiler.js"></script>
-<script src="http://www.cdnjs.net/ajax/libs/ember.js/1.12.0/ember.min.js"></script>
-<script src="http://www.cdnjs.net/ajax/libs/ember-data.js/1.0.0-beta.17/ember-data.min.js"></script>
--->
+<script type="text/x-handlebars" data-template-name="index">
+
+    <section id="mbooks" >
+        <section id="main">
+            <ul id="link-list">
+                {{#each l in model}}
+                <li >
+                    <a {{bind-attr href="l.url"}}>{{l.title}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </section>
+    </section>
+</script>
+
+
 <script src="dist/js/jquery.min.js"></script>
 <script src="dist/js/handlebars.min.js"></script>
 <script src="dist/js/ember.min.js"></script>
