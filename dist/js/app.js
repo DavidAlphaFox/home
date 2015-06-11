@@ -50,6 +50,10 @@
       id: 4,
       title: '关于我',
       url: 'http://cn.linkedin.com/in/gaotianpo'
+    }, {
+      id: 5,
+      title: 'VPS提供商',
+      url: 'http://www.vultr.com/?ref=6833358'
     }
   ];
 
