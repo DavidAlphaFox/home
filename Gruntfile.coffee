@@ -29,8 +29,7 @@ module.exports = (grunt)->
 
       css: {
         src: ['bower_components/bootstrap/dist/css/bootstrap.css',
-              'bower_components/bootstrap/dist/css/bootstrap-theme.css',
-              'stylesheets/style.css'
+              'bower_components/bootstrap/dist/css/bootstrap-theme.css'
         ],
         dest: 'dist/css/app.css'
       }

@@ -24,7 +24,7 @@
           dest: 'dist/js/app.js'
         },
         css: {
-          src: ['bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/bootstrap/dist/css/bootstrap-theme.css', 'stylesheets/style.css'],
+          src: ['bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/bootstrap/dist/css/bootstrap-theme.css'],
           dest: 'dist/css/app.css'
         }
       },

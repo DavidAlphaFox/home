@@ -19,18 +19,26 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="index">
-
-    <section id="mbooks" >
-        <section id="main">
-            <ul id="link-list">
+    <div class="row">
+    <div class="col-md-4"></div>
+    <div class="table-responsive col-md-4">
+        <table class="table">
+            <tbody>
                 {{#each l in model}}
-                <li >
-                    <a {{bind-attr href="l.url"}}>{{l.title}}</a>
-                </li>
+                <tr >
+                <td>
+                    <a {{bind-attr href="l.url"}}>
+                        <h4>{{l.title}}</h4>
+                    </a>
+                </td>
+                </tr>
                 {{/each}}
-            </ul>
-        </section>
-    </section>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4"></div>
+    </div>
 </script>
 
 
