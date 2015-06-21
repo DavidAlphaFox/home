@@ -72,6 +72,13 @@ module.exports = (grunt)->
             filter: 'isFile'
           },
           {
+            expand:true,
+            flatten:true,
+            src: ['bower_components/normalize.css/normalize.css'],
+            dest: 'dist/css',
+            filter: 'isFile'
+          },
+          {
             expand: true,
             cwd: 'bower_components/bootstrap/dist/fonts/'
             src: ['*'],
