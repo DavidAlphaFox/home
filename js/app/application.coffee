@@ -5,4 +5,5 @@ MBooks.ApplicationAdapter = DS.FixtureAdapter.extend()
 MBooks.Router.map(
   ()->
     @resource('index', { path: '/' })
+    @route("login")
 )

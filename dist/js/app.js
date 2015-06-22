@@ -4,9 +4,10 @@
   MBooks.ApplicationAdapter = DS.FixtureAdapter.extend();
 
   MBooks.Router.map(function() {
-    return this.resource('index', {
+    this.resource('index', {
       path: '/'
     });
+    return this.route("login");
   });
 
 }).call(this);
@@ -56,6 +57,23 @@
       url: 'http://www.vultr.com/?ref=6833358'
     }
   ];
+
+}).call(this);
+
+(function() {
+  MBooks.LoginController = Em.Controller.extend({
+    actions: {
+      login: function() {
+        var data;
+        data = this.getProperties("email", "password");
+        return console.log(data);
+      },
+      register: function() {
+        console.log("register clicked");
+        return this.transitionTo("register");
+      }
+    }
+  });
 
 }).call(this);
 

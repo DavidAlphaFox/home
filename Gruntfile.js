@@ -15,16 +15,20 @@
       },
       concat: {
         options: {},
-        basic: {
+        basicjs: {
           src: ['bower_components/ember/ember-template-compiler.js', 'bower_components/ember/ember.js'],
           dest: 'dist/js/ember.js'
         },
-        app: {
+        appjs: {
           src: ['dist/*.js'],
           dest: 'dist/js/app.js'
         },
-        css: {
+        basiccss: {
           src: ['bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/bootstrap/dist/css/bootstrap-theme.css'],
+          dest: 'dist/css/basic.css'
+        },
+        appcss: {
+          src: ['css/*.css'],
           dest: 'dist/css/app.css'
         }
       },
@@ -42,6 +46,7 @@
       cssmin: {
         build: {
           files: {
+            'dist/css/basic.min.css': ['dist/css/basic.css'],
             'dist/css/app.min.css': ['dist/css/app.css']
           }
         }

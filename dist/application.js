@@ -4,9 +4,10 @@
   MBooks.ApplicationAdapter = DS.FixtureAdapter.extend();
 
   MBooks.Router.map(function() {
-    return this.resource('index', {
+    this.resource('index', {
       path: '/'
     });
+    return this.route("login");
   });
 
 }).call(this);
