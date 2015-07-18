@@ -45,8 +45,8 @@
       url: 'http://my.oschina.net/u/236698'
     }, {
       id: 3,
-      title: '我司京东众筹－4G流量包一辈子',
-      url: 'http://z.jd.com/project_details.action?projectId=14307'
+      title: '我的甜点小屋',
+      url: 'http://shop121709433.taobao.com/?spm=a1z10.1-c.0.0.7I96nr'
     }, {
       id: 4,
       title: '关于我',
