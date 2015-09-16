@@ -16,17 +16,12 @@ MBooks.Link.FIXTURES = [
     url: 'http://my.oschina.net/u/236698'
   },
   {
-    id: 3,
-    title: '我的甜点小屋',
-    url: 'http://shop121709433.taobao.com/?spm=a1z10.1-c.0.0.7I96nr'
-  },
-  {
-    id:4,
+    id:3,
     title: '关于我',
     url: 'http://cn.linkedin.com/in/gaotianpo'
   },
   {
-    id:5
+    id:4
     title: 'VPS提供商'
     url: 'http://www.vultr.com/?ref=6833358'
   }
